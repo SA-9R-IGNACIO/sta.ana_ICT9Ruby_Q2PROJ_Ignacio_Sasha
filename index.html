@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to yummies!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css">
+    
+    <style>
+    body {
+        font-family: 'Times New Roman;', sans-serif; 
+        background-color: #BBA487;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yummies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="homeBtn">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="submit_recipe.html">Submit Recipe</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container my-5">
+        
+        <div id="homeSection" class="d-none">
+            <h2 class="text-center" style="color: #BA3324;">Welcome to Yummies!</h2>
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://panlasangpinoy.com/wp-content/uploads/2019/12/filipino-pork-barbecue-scaled.jpg" class="d-block w-100" alt="Filipino Pork Barbecue">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Adobo_DSCF4391.jpg/1200px-Adobo_DSCF4391.jpg" class="d-block w-100" alt="Filipino Adobo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.bhg.com/thmb/xP6vr6usB1_phcXnXE75YkUcH7g=/4000x0/filters:no_upscale():strip_icc()/BHG-Halo-Halo-Hero-6MKIKIe-ar386nzeJOHjW_-354671c880d441aba6a75e75e59b1066.jpg" class="d-block w-100" alt="Halo-Halo">
+                    </div> 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        
+        document.getElementById('homeBtn').addEventListener('click', function() {
+            document.getElementById('homeSection').classList.remove('d-none');
+        });
+    </script>
+
+</body>
+</html>

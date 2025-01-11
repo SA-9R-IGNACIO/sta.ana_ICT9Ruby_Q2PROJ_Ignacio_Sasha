@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Categories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        font-family: 'serif;', sans-serif; 
+        background-color: #BBA487;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yummies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="submit_recipe.html">Submit Recipe</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center" style="color: #BA3324;">Recipe Categories</h2>
+        <p class="text-center text-muted mb-5">Explore various recipe categories and discover new favorites!</p>
+        
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-warning text-white text-center">
+                        <h5>Snacks</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Simple and yummy snacks that will make you want more.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h5>Dishes</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Yummy main dishes that will make you feel relieved in one bite.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h5>Desserts</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Yummy desserts that will make you forget about your problems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <DIV CLASS="content">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-warning text-white text-center">
+                        <h5>Filipino Pork Barbecue</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://panlasangpinoy.com/wp-content/uploads/2019/12/filipino-pork-barbecue-scaled.jpg" class="card-img-top" alt="Filipino Pork Barbecue">
+                        <button class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#barbecueModal">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="barbecueModal" tabindex="-1" aria-labelledby="barbecueModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="barbecueModalLabel">Filipino Pork Barbecue Ingredients</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Ingredients:</strong></p>
+                        <ul>
+                            <li>3 lbs pork shoulder sliced into thin pieces</li>
+                            <li>3 tablespoons Knorr Liquid Seasoning</li>
+                            <li>4 pieces calamansi or 2 pieces lime</li>
+                            <li>½ cup banana ketchup</li>
+                            <li>½ cup soy sauce</li>
+                            <li>2 ½ tablespoons brown sugar</li>
+                            <li>2 teaspoons garlic powder</li>
+                            <li><strong>Basting Sauce:</strong></li>
+                            <li>5 tablespoons soy sauce</li>
+                            <li>1 tablespoon Knorr Liquid Seasoning</li>
+                            <li>1 piece calamansi or ½ lime</li>
+                            <li>¼ cup banana ketchup</li>
+                            <li>2 teaspoons vegetable oil</li>
+                        </ul>
+                        <img src="https://panlasangpinoy.com/wp-content/uploads/2019/12/filipino-pork-barbecue-scaled.jpg" class="w-100" alt="Filipino Pork Barbecue">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h5>Filipino Adobo</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Adobo_DSCF4391.jpg/1200px-Adobo_DSCF4391.jpg" class="card-img-top" alt="Filipino Adobo">
+                        <button class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#adoboModal">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="adoboModal" tabindex="-1" aria-labelledby="adoboModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="adoboModalLabel">Filipino Adobo Ingredients</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Ingredients:</strong></p>
+                        <ul>
+                            <li>2 tablespoons vegetable oil</li>
+                            <li>1 (3 pound) chicken, cut into pieces</li>
+                            <li>1 large onion, quartered and sliced</li>
+                            <li>2 tablespoons minced garlic</li>
+                            <li>⅔ cup low sodium soy sauce</li>
+                            <li>⅓ cup white vinegar</li>
+                            <li>1 tablespoon garlic powder</li>
+                            <li>2 teaspoons black pepper</li>
+                            <li>1 bay leaf</li>
+                        </ul>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Adobo_DSCF4391.jpg/1200px-Adobo_DSCF4391.jpg" class="w-100" alt="Filipino Adobo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-info text-white text-center">
+                        <h5>Halo-Halo</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://www.bhg.com/thmb/xP6vr6usB1_phcXnXE75YkUcH7g=/4000x0/filters:no_upscale():strip_icc()/BHG-Halo-Halo-Hero-6MKIKIe-ar386nzeJOHjW_-354671c880d441aba6a75e75e59b1066.jpg" class="card-img-top" alt="Halo-Halo">
+                        <button class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#haloHaloModal">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="haloHaloModal" tabindex="-1" aria-labelledby="haloHaloModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="haloHaloModalLabel">Halo-Halo Ingredients</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Ingredients:</strong></p>
+                        <ul>
+                            <li>1/4 cup shaved ice</li>
+                            <li>2 tablespoons condensed milk</li>
+                            <li>2 tablespoons jellies (optional)</li>
+                            <li>Sweet beans (optional)</li>
+                            <li>1 scoop ube ice cream</li>
+                            <li>1/4 cup evaporated milk</li>
+                        </ul>
+                        <img src="https://www.bhg.com/thmb/xP6vr6usB1_phcXnXE75YkUcH7g=/4000x0/filters:no_upscale():strip_icc()/BHG-Halo-Halo-Hero-6MKIKIe-ar386nzeJOHjW_-354671c880d441aba6a75e75e59b1066.jpg" class="w-100" alt="Halo-Halo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </DIV>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
